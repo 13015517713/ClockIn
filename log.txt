@@ -1,4 +1,0 @@
-DEBUG 2020.11.24. 11:05:30 [connectionpool.py:943] Starting new HTTPS connection (1): jksb.v.zzu.edu.cn:443
-DEBUG 2020.11.24. 11:05:31 [connectionpool.py:442] https://jksb.v.zzu.edu.cn:443 "GET /vls6sss/zzujksb.dll/first0 HTTP/1.1" 200 3967
-DEBUG 2020.11.24. 11:05:31 [Service.py:38] Successfully parsed the infopageurl.
-DEBUG 2020.11.24. 11:05:31 [connectionpool.py:943] Starting new HTTPS connection (1): jksb.v.zzu.edu.cn:443
