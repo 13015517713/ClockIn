@@ -108,9 +108,12 @@ class PostStruce2:
     # Btn3   获取城市  这个是不是没什么用
     myvs_13a = "41"  # 河南省对应的value 
     myvs_13b = "4101"  # 郑州市对应的value
-    myvs_13c = "河南省.郑州市.中原区xxxxxx"  # 要填写的家庭住址地区
+    myvs_13c = "河南省.郑州市.花园路国基路琥珀名城23号楼"  # 要填写的具体地区
     myvs_14 = "否"  #  是否当天返郑
-    myvs_14b = ""  # 自动测温记录：否
+    myvs_14b = ""  #  14填是后：这里填反郑前的居住地
+    myvs_30 = "已离校"   # 2021新增  目前是否在校
+    # 自动测温记录：否
+
 
     def __init__(self):
         self.myvs_13c = tol.getConfig("home")
@@ -128,6 +131,6 @@ class PostStruce2:
         # 确认需要的
     def serialize(self):  # 序列化自己
         str1 = "did=%s&door=%s&day6=%s&men6=%s&sheng6=%s&shi6=%s&fun3=%s&ptopid=%s&sid=%s&"%(self.did,self.door,self.day6,self.men6,self.sheng6,self.shi6,self.fun3,self.ptopid,self.sid)
-        str2 = "myvs_1=%s&myvs_2=%s&myvs_3=%s&myvs_4=%s&myvs_13a=%s&myvs_13b=%s&myvs_13c=%s&myvs_14=%s&myvs_14b=%s"%(self.myvs_1,self.myvs_2,self.myvs_3,self.myvs_4,self.myvs_13a,self.myvs_13b,self.myvs_13c,self.myvs_14,self.myvs_14b)
+        str2 = "myvs_1=%s&myvs_2=%s&myvs_3=%s&myvs_4=%s&myvs_13a=%s&myvs_13b=%s&myvs_13c=%s&myvs_14=%s&myvs_14b=%s&myvs_30=%s"%(self.myvs_1,self.myvs_2,self.myvs_3,self.myvs_4,self.myvs_13a,self.myvs_13b,self.myvs_13c,self.myvs_14,self.myvs_14b,self.myvs_30)
         str = str1+str2
         return str
