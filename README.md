@@ -25,7 +25,7 @@
 
 2.在config,json中配置你的账号、密码、家庭住址（这个还是配上吧，有个页面需要）
 
-3.然后在当前目录执行Python Main.py，Pyhton版本 3.6，不是版本2点多应该都可
+3.然后在当前目录执行Python Main.py，Python版本 3.6，不是版本2点多应该都可
 
 4.Python Main.py运行时可能会需要某些包，smtp,requests直接一步一步pip install即可
 
